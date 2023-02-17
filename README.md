@@ -1,4 +1,4 @@
-Raspberry Pi Pico
+Raspberry Pi Pico W
 
 
 Introduction of Pico
@@ -8,24 +8,26 @@ the world, would suddenly release a microcontroller of its own. What's more surp
 Raspberry Pi Pico does not base its design on the common ESP32 or SAMD21, but instead a 
 brand new microcontroller chip: the RP2040 microcontroller. The RP2040 microcontroller is a 
 microcontroller chip independently designed by Raspberry Pi, and is powered by a dual-core ARM 
-Cortex-M0+ processor that runs up to 133Mhz.
+Cortex-M0+ processor that runs up to 133Mhz. Programming will be made with MicroPython 
 
-![image](https://user-images.githubusercontent.com/124893862/219125355-1111fa64-5b0f-43a7-a13d-57bd35c77a02.png)
+![image](https://user-images.githubusercontent.com/124893862/219611249-dd82aad6-da4c-41f7-a80e-fc87fd51e38a.png)
 
 GPIO Pins
 
-In addition to the powerful new chip, the board of Raspberry Pi Pico exposes 26 multifunction GPIO pins, including 2 * SPI, 2 * I2C, 2 * UART, 3 * 12-bit ADC, and 16 controllable 
-PWM channels. I will explain the functions of these pins in later chapters.
+In addition to the powerful new chip, the board of Raspberry Pi Pico exposes 26 multi-function GPIO pins, including 2 * SPI, 2 * I2C, 2 * UART, 3 * 12-bit ADC, and 16 controllable 
+PWM channels. I will explain the functions of these pins in each respective directory.
 In addition to these GPIO pins, Pico also has eight ground pins and a series of power pins. 
-In this course, however, we will not utilize them as we will not be performing tedious wiring with 
-breadboards or DuPont wires when building projects. The expansion board — Grove Shield for Pi 
-Pico — will helps you do this instead.
+H
 
-![image](https://user-images.githubusercontent.com/124893862/219125675-5797e394-552a-4825-9198-93f1f7c4a615.png)
+![image](https://user-images.githubusercontent.com/124893862/219611075-1f9e3f77-ad73-4504-9a44-8857870773e3.png)
 
 Shield Case
 
-![image](https://user-images.githubusercontent.com/124893862/219129569-369cb0b6-199f-4262-8a5e-e265826307b4.png)
+The shield case has white connectors to link the rapsberry to the diferent modules using a cable, this way there is no mistake that can't be made and we can focus more on the programming. We can find the name of each pin (that we want to call) written to the connector that we just wired. Power voltage of these connectors can be switched between 5 to 3.3V with a simple switch. It have a double female pin header for the use of single wiring to the RPi GPIO
+
+Grove Shield For Pi Pico v1.0 by Seed Studio https://www.seeedstudio.com/
+
+![image](https://user-images.githubusercontent.com/124893862/219610776-ff0e4372-5288-4e84-8a42-88c22d09d84c.png)
 
 
 # smartcities
