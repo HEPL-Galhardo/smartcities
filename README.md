@@ -3,14 +3,11 @@ Raspberry Pi Pico W
 
 Introduction of Pico
 
-No one expected that Raspberry Pi, the most popular single-board computer maker in 
-the world, would suddenly release a microcontroller of its own. What's more surprising is that 
-Raspberry Pi Pico does not base its design on the common ESP32 or SAMD21, but instead a 
-brand new microcontroller chip: the RP2040 microcontroller. The RP2040 microcontroller is a 
-microcontroller chip independently designed by Raspberry Pi, and is powered by a dual-core ARM 
-Cortex-M0+ processor that runs up to 133Mhz. Programming will be made with MicroPython 
+No one expected that Raspberry Pi, the most popular single-board computer maker in the world, would suddenly release a microcontroller of its own. What's more surprising is that Raspberry Pi Pico does not base its design on the common ESP32 or SAMD21, but instead a brand new microcontroller chip: the RP2040 microcontroller. The RP2040 microcontroller is a microcontroller chip independently designed by Raspberry Pi, and is powered by a dual-core ARM 
+Cortex-M0+ processor that runs up to 133Mhz. Programming will run with MicroPython, MicroPython has made strides in keeping compatibility with ordinary Python as much as possible.
 
-![image](https://user-images.githubusercontent.com/124893862/219611249-dd82aad6-da4c-41f7-a80e-fc87fd51e38a.png)
+![image](https://user-images.githubusercontent.com/124893862/219611249-dd82aad6-da4c-41f7-a80e-fc87fd51e38a.png)![image](https://user-images.githubusercontent.com/124893862/219622236-a85db1f7-3dd8-4ba2-a3bf-8396c5b27cb0.png)
+
 
 GPIO Pins
 
