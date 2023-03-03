@@ -1,5 +1,5 @@
 # File : knob.py
-# Simple program to control a led with a button
+# Simple program to control a led with a rotary button
 # https://docs.micropython.org/en/latest/library/machine.Pin.html
 # joao.galhardocarraca@student.hepl.be
 # 13/2/2023
