@@ -20,3 +20,13 @@ This file is to index the different files in this directory and inform users abo
   - Led module wired to the Raspberry Pico W on pin 16 and the button to the pin 18 (see demo and link below)
       [PHOTO DEMO]
   - [button_led.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/GPIO/button_led.py)
+
+* Blink a LED
+  - Led module wired to the Raspberry Pico W on pin 16 to turn on and off with 1 second of delay(see demo and link below)
+      [PHOTO DEMO]
+  - [blink.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/GPIO/blink.py)
+
+* Blink a LED
+  - Led module wired to the Raspberry Pico W on pin 16 to turn on and off with 1 second of delay(see demo and link below)
+      [PHOTO DEMO]
+  - [blink.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/GPIO/blink.py)
