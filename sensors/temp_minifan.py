@@ -16,12 +16,12 @@ i2c=I2C(1,scl=Pin(7), sda=Pin(6), freq=400000)
 #Label data type, number of lines and characters per line
 d=LCD1602(i2c,2,16)
 #DHT sensor pin configuration
-dht=DHT(16)
+dht=DHT(18)
 
 d.display() #enable display
 
 #Minifan pin configuration
-minifan=machine.Pin(18,macine.Pin.OUT)
+minifan=machine.Pin(20,macine.Pin.OUT)
 
 #While statement to turn the fan on when the button is pushed
 while True:
