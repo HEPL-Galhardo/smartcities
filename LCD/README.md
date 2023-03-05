@@ -8,7 +8,7 @@ This file is to index the different files in this directory and inform users abo
   - [LCD_hello_world.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LCD/LCD_hello_world.py)
   
 * Display the value of a rotary sensor on a LCD display
-  - LCD display module is wired to the Raspberry Pico W on ***pin I2C1*** and the rotary sensor on pin ADC0(see demo and link below)
+  - LCD display module is wired to the Raspberry Pico W on ***pin I2C1*** and the rotary sensor on ***pin ADC0***(see demo and link below)
       [PHOTO DEMO]
   - [LCD_knob.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LCD/LCD_knob.py)
   
