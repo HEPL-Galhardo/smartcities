@@ -2,17 +2,18 @@
 
 This file is to index the different files in this directory and inform users about the functionning and the essential wiring of each script. 
 
-* Display a string of charaters on a LCD display
-  - LCD display module wired to the Raspberry Pico W on pin I2C1 (see demo and link below)
+* Display a different colors with 1/5th seconds delay on a LED_neo module
+  - LED_neo module wired to the Raspberry Pico W on pin 18 (see demo and link below)
       [PHOTO DEMO]
-  - [LCD_hello_world.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/LCD_hello_world.py)
+  - [rgb_led.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/rgb_led.py)
   
-* Display the value of a rotary sensor on a LCD display
-  - LCD display module wired to the Raspberry Pico W on pin I2C1 and the rotary sensor on pin ADC0(see demo and link below)
+* Different types of funtionto display colors with 1/5th seconds delay on a LED_neo module
+  - LED_neo module wired to the Raspberry Pico W on pin 18 (see demo and link below)
       [PHOTO DEMO]
-  - [LCD_knob.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/LCD_knob.py)
+  - [rgb_leds.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/rgb_leds.py)
   
-  * Display the value of a rotary sensor on a LCD display and with a fading LED
-  - LCD display module wired to the Raspberry Pico W on pin I2C1, the rotary sensor on pin ADC0 and the LED module on pin 16 (see demo and link below)
+* Display a different colors on a LED_neo module according to a light and sound sensor
+  - LED_neo module wired to the Raspberry Pico W on pin 18, the light sensor to pin ADC0 and the sound sensor to the pin ADC1 (see demo and link below)
+    - If theres light then the led displays white, if the noise is too laud then the led displays red, for medium noise orange light and for low noise green light.
       [PHOTO DEMO]
-  - [LCD_led.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/LCD_led.py)
+  - [smart_light.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/smart_light.py)
