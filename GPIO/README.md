@@ -6,9 +6,9 @@ This file is to index the different files in this directory and inform users abo
 
  The `machine` class is a built-in class in MicroPython that provides functionalities to access the hardware resources of the microcontroller on which MicroPython is running. This class is mainly used to perform I/O (input/output) operations such as reading and writing to GPIO pins, managing hardware interrupts, putting the microcontroller to sleep, and controlling the clock.
 
-Here are some of the important features of the 'machine' class:
+Here are some of the important features of the machine class:
 
-  - `Pin`: This  class in MicroPython is used for controlling the General-Purpose Input/Output (GPIO) pins of the microcontroller. The GPIO pins can be configured as either inputs or outputs, allowing you to read external signals or control external devices such as LEDs, motors, sensors, and more. The "Pin" class provides several functions to control the behavior of the GPIO pins. Here are some of the important functions available in the "Pin" class:
+  - `Pin`: This  class  is used for controlling the General-Purpose Input/Output (GPIO) pins of the microcontroller. The GPIO pins can be configured as either inputs or outputs, allowing you to read external signals or control external devices such as LEDs, motors, sensors, and more. The "Pin" class provides several functions to control the behavior of the GPIO pins.
 
       - init(): This function initializes the Pin object and sets the direction of the GPIO pin as either an input or an output.
       - value(): This function gets or sets the value of the GPIO pin. When used as a getter, it returns the current logical level of the pin (0 or 1). When used as a setter, it sets the logical level of the pin to 0 or 1.
