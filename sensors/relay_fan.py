@@ -10,7 +10,6 @@ from utime import sleep
 
 #Button, Fan and Relay pin configuration
 bt=Pin(16, Pin.IN)
-fan=Pin(18,Pin.OUT)
 relay=Pin(20,Pin.OUT)
 
 #While statemenr set and keep the fan power on
