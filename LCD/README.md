@@ -2,6 +2,9 @@
 
 This file is to index the different files in this directory and inform users about the functionning and the essential wiring of each script. 
 
+* A simple library for the LCD Display
+  - [lcd1602.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LCD/lcd1602.py)
+
 * Display a string of charaters on a LCD display
   - LCD display module is wired to the Raspberry Pico W on ***pin I2C1*** (see demo and link below)
   
