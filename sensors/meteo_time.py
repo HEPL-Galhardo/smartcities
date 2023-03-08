@@ -10,8 +10,6 @@ from lcd1602 import LCD1602
 from dht11 import *
 from machine import Pin,I2C,ADC,PWM,RTC
 from utime import sleep
-#import readings.txt
-import uos
 
 
 #I2C bus line configuration
@@ -22,7 +20,7 @@ d=LCD1602(i2c,2,16)
 dht=DHT(16)
 rtc=RTC()
 
-
+#Bit configuration of a new charater
 degree=[
     0b00111,
     0b00101,
@@ -34,21 +32,14 @@ degree=[
     0b00000,]
 
 d.clear()
+#Creation of a new charater at the placement 0
 d.create_char(0,degree)
 d.display() #enable display
 
-#uos.mount(uos.VFS_SPIFFS, "/spiffs")
-content=[]
-oldcontent=[]
-
-my_file =open('readings.txt')
-oldcontent = my_file.read()
-print(oldcontent)
-my_file.close()
 
 while True:
     temp, humid=dht.readTempHumid()#Get the value of temperature and humidity
-    dt=rtc.datetime()
+    dt=rtc.datetime()#Get the date and time from the uC
     d.clear()#clear display
     d.setCursor(0,0)#Set the cursor to origin
     d.print("Temp:{:.1f}".format(temp))#display temperature value
@@ -60,15 +51,4 @@ while True:
     d.print("Humid:"+str(humid))#display temperature value
     d.setCursor(8,0)#Set the cursor to origin
     sleep(1)#1 second delay between readings
-    content=(content,"Temp: {:.1f}".format(temp),"	Humid: ",str(humid),"	Time: ","{:2d}:{:02}".format(dt[4],dt[5]),"/n/r/n/r")
-    
-    content=oldcontent+content
-    my_file=open('readings.txt', 'w')
-    my_file.write(content)
-    my_file.close()
-
-
-my_file=open('readings.txt')
-print(my_file)
-my_file.close()
 
