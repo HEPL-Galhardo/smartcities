@@ -21,7 +21,7 @@ dht=DHT(18)
 d.display() #enable display
 
 #Minifan pin configuration
-minifan=machine.Pin(20,macine.Pin.OUT)
+minifan=machine.Pin(20,machine.Pin.OUT)
 
 #While statement to turn the fan on when the button is pushed
 while True:
