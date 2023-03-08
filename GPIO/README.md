@@ -29,7 +29,7 @@ Here are some of the important features of the machine class:
   - `PWM`: This class in MicroPython is used for controlling the Pulse-Width Modulation (PWM) output signals of the microcontroller. PWM signals are used for controlling the speed of motors, dimming LEDs, generating audio signals, and more. The "PWM" class provides several functions to configure and control the behavior of the PWM signals. Here are some of the important functions available in the "PWM" class:
       - init(): This function initializes the PWM object and sets its frequency and duty cycle values.
       - deinit(): This function stops and deallocates the PWM object, releasing any hardware resources used by the PWM signal.
-      - frequency(): This function gets or sets the frequency of the PWM signal, in Hertz (Hz).
+      - freq(): This function gets or sets the frequency of the PWM signal, in Hertz (Hz).
       - duty(): This function gets or sets the duty cycle of the PWM signal, as a floating-point value between 0.0 (0%) and 1.0 (100%).
       - pulse_width(): This function gets or sets the pulse width of the PWM signal, in seconds.
       - start(): This function starts the PWM signal output.
