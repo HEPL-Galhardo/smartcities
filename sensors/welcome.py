@@ -8,7 +8,7 @@
 from machine import Pin,PWM,I2C
 from lcd1602 import LCD1602
 from utime import sleep
-from buzzer import Music
+from buzzer import music
 from servo import SERVO
 
 
@@ -19,7 +19,7 @@ d=LCD1602(i2c,2,16)
 #Buzzer, Servo Motor, pir: pin configuration
 servo=SERVO(Pin(20))
 pwm=PWM(Pin(27))
-mu=Music(pwm)
+mu=music(pwm)
 pir= Pin(18,Pin.IN)
 
 #While statement to play a music, show a message on the LCD and open a door when motion detected
