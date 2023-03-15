@@ -2,6 +2,27 @@
 
 This file is to index the different files in this directory and inform users about the functionning and the essential wiring of each script. 
 
+## Library explanation
+### Buzzer library
+  buzzer.py is a self made library for Micropython code that defines a class called "Music" and uses the "machine" module to control a buzzer through PWM (Pulse Width Modulation). 
+  
+  Here is an explanation of the different parts of the code:
+
+  - `__init__`(self,pwm_pin): is a constructor method, which is called when a new instance of the "Music" class is created. It takes one argument, "pwm_pin", which represents the PWM pin that will be used to control the buzzer. The method creates an instance variable called "self.pwm" that stores the PWM object associated with the specified pin.
+
+  - `music`(self,number):is a method that takes one argument, "number", which is an index into the "Freq" tuple that specifies the frequency of the note to be played. The method then sets the frequency of the PWM signal to the corresponding value using the "freq()" method of the PWM object. Finally, it sets the duty cycle of the PWM signal to 5000 (out of 65535) using the "duty_u16()" method of the PWM object. This causes the buzzer to play the specified note.
+
+### Servo library
+  servo.py is a self made library for Micropython code that creates a class named SERVO to control a servo motor using PWM (Pulse Width Modulation) signals.
+  
+  Here is an explanation of the different methods of the code:
+
+  - `__init__`(self, pin) that initializes two instance variables self.pin and self.pwm with the given pin number.
+
+  - `turn`(self,val) that takes a value val (in degrees) as an input parameter and calculates the rotation angle of the servo motor.
+  
+## Scripts and explanations
+
 * A Buzzer simple library to play a note from 0 to 7 with a delay of choise
   - [buzzer.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/sensors/buzzer.py)
   
@@ -30,7 +51,9 @@ This file is to index the different files in this directory and inform users abo
   
  * Turn a servo-motor between 2 different angles 10 times with a 1 second of delay
     - The servo-motor module is wired to the Raspberry Pico W on ***pin 20***(see demo and link below)
+    
        https://user-images.githubusercontent.com/124893862/223854131-1845e0b7-acc1-425e-a70f-0460d1e8579a.mp4
+       
     - [servo_.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/sensors/servo_.py)
   
  * Turn a servo-motor in an infite loop, 1° each 1/10th of a second
@@ -42,7 +65,12 @@ This file is to index the different files in this directory and inform users abo
   
  * Turn a servo-motor to open a door each time motion is detected
     - The servo-motor module is wired to the Raspberry Pico W on ***pin 20*** and the PIR sensor module to the ***pin 18***(see demo and link below)
+    
+    
       [PHOTO DEMO]
+      
+      
+      
     - [pir_servo.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/sensors/pir_servo.py)
   
  * Display the temperature and humidity on a LCD display each second
