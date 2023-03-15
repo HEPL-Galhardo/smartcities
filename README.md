@@ -3,13 +3,19 @@
 
 ## Introduction of Pico
 
-No one expected that Raspberry Pi, the most popular single-board computer maker in the world, would suddenly release a microcontroller of its own. What's more surprising is that Raspberry Pi Pico does not base its design on the common ESP32 or SAMD21, but instead a brand new microcontroller chip: the RP2040 microcontroller. The RP2040 microcontroller is a microcontroller chip independently designed by Raspberry Pi, and is powered by a dual-core ARM 
-Cortex-M0+ processor that runs up to 133Mhz. Programming will run with MicroPython, MicroPython has made strides in keeping compatibility with ordinary Python as much as possible.
-
-![image](https://user-images.githubusercontent.com/124893862/219622236-a85db1f7-3dd8-4ba2-a3bf-8396c5b27cb0.png)
+The Raspberry Pi Pico W is a compact and affordable microcontroller board that is designed for embedded projects and IoT applications. It features a powerful Arm Cortex-M0+ processor running at 133MHz, 264KB of RAM, 2MB of onboard flash memory, and a wide range of I/O pins, including 26 multifunctional GPIO pins, SPI, I2C, UART, and PWM.
 
 ![image](https://user-images.githubusercontent.com/124893862/219611249-dd82aad6-da4c-41f7-a80e-fc87fd51e38a.png)
 
+The Pico W also includes a built-in Wi-Fi module, which allows for wireless connectivity and communication with other devices or networks. This makes it ideal for building connected devices and IoT projects that require remote control and data exchange.
+
+To program the Raspberry Pi Pico W, you can use MicroPython, a lightweight version of the Python programming language that is specifically designed for microcontrollers. MicroPython allows you to write code in Python syntax, which makes it easy to learn and use, even for beginners.
+
+![image](https://user-images.githubusercontent.com/124893862/219622236-a85db1f7-3dd8-4ba2-a3bf-8396c5b27cb0.png)
+
+MicroPython provides a rich set of libraries and modules that you can use to interact with the board's hardware peripherals, including GPIO, PWM, I2C, SPI, and UART. You can also leverage third-party libraries and modules that are compatible with MicroPython to extend the functionality of your projects.
+
+Overall, the Raspberry Pi Pico W, combined with MicroPython, offers a powerful and accessible platform for building embedded and IoT projects. Whether you're a beginner or an experienced developer, the Pico W provides a versatile and affordable solution for prototyping and implementing your ideas.
 
 ## GPIO Pins
 
