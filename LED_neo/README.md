@@ -2,6 +2,31 @@
 
 This file is to index the different files in this directory and inform users about the functionning and the essential wiring of each script. 
 
+## Library explanation
+
+  ldc1602.py is a  library for Micropython that defines a class named LCD1602, and contains several methods that represent commands that can be sent to a 16x2 character LCD (liquid crystal display) using an I2C interface.
+
+  Here is a brief explanation of each method:
+
+  - `__init__`(self, pin_num, led_count, brightness = 0.5): is the constructor method of the class. It initializes the object with the number of display lines, number of LEDs on the strip and a default brightness.
+
+  - `pixels_show`(self): This method clears the display and sets the cursor position to zero.
+
+  - `pixles_set`(self, i, color): This method sets a color position to zero.
+
+  - `pixels_fill`(self, color): This method sets the cursor position to the specified column and row.
+
+  - `color_chase`(self,color, wait): This method turns off the display.
+display
+  - `wheel`(self, pos): This method ...
+
+  - `rainbow_cycle`(self, wait): This method ...
+
+## Scripts and explanations
+
+* A simple library for the LED_neo strip
+  - [ws2812.py](https://github.com/HEPL-Galhardo/smartcities/blob/main/LED_neo/ws2812.py)
+
 * Display a different colors with 1/5th seconds delay on a LED_neo module
   - LED_neo module is wired to the Raspberry Pico W on ***pin 18*** (see demo and link below)
 
