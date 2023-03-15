@@ -22,7 +22,7 @@ display
 
   - `no_cursor`(self): This method turns off the underline cursor.
 
-  - ´cursor´(self): This method turns on the underline cursor.
+  - `cursor`(self): This method turns on the underline cursor.
 
   - `no_blink`(self): This method turns off the blinking cursor.
 
