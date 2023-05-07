@@ -12,8 +12,8 @@ import utime
 print(utime.localtime())
 
 # Configuration de la connexion Wi-Fi
-SSID="Proximus-Home-50F8"				#Kot: SSID="Proximus-Home-50F8"  PASSWORD="wz92j9eaey3pc"
-PASSWORD="wz92j9eaey3pc"
+SSID=""
+PASSWORD=""
 wlan = network.WLAN(network.STA_IF)
 #Enabeling the wlan
 wlan.active(True)
