@@ -32,8 +32,8 @@ d.display() #enable display
 d.autoscroll()
 
 #Wifi connection
-SSID="Proximus-Home-50F8"				#Kot: SSID="Proximus-Home-50F8"  PASSWORD="wz92j9eaey3pc"
-PASSWORD="wz92j9eaey3pc"				#HEPL: SSID="electroProjetctWifi"  PASSWORD="M13#MRSE"
+SSID=""
+PASSWORD=""
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 print("Wifi On:",wlan.status())
