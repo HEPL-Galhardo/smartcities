@@ -35,8 +35,8 @@ d.display() #enable display
 
 #---------------------------------------Wifi Connection-------------------------------------------
 #Wifi connection: setting the identifier and the password to the wifi connection
-SSID="Android Galhardo"				#Kot: SSID="Proximus-Home-50F8"  PASSWORD="wz92j9eaey3pc"
-PASSWORD="Galhardo1996"					#HEPL: SSID="electroProjetctWifi"  PASSWORD="M13#MRSE"
+SSID=""
+PASSWORD=""
 wlan = network.WLAN(network.STA_IF)
 #Enabeling the wlan
 wlan.active(True)
