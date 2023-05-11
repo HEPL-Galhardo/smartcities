@@ -13,7 +13,7 @@ import urequests
 def sub_cb(topic, msg):
     print(topic.decode(), msg.decode())
     
-#---------------------------------------Wifi Connection-------------------------------------------
+#---------------------------------------Wifi Connection-------------------------------
 #Wifi connection: setting the identifier and the password to the wifi connection
 SSID=""
 PASSWORD=""
@@ -43,7 +43,7 @@ if wlan.isconnected():
     print("Wifi connection made with ",SSID)
 print("IP Adresse informations: ",wlan.ifconfig())
 
-#---------------------------------------MQTT Server Connection-------------------------------------------
+#---------------------------------------MQTT Server Connection----------------------------
 #Connection to the server MQTT
 print('Authetification for the connecting to MQTT Broker')
 monClientMqtt = MQTTClient(client_id="PicoIoT",
