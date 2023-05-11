@@ -13,8 +13,8 @@ import utime
 rtc = machine.RTC()
 
 #-----------------Wifi connection------------------
-ssid = 'Android Galhardo'
-password = 'Galhardo1996'
+ssid = ''
+password = ''
 station = network.WLAN(network.STA_IF)
 station.active(True)
 station.connect(ssid, password)
