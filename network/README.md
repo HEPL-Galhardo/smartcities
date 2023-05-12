@@ -2,12 +2,67 @@
 
 This file is to index the different files in this directory and inform users about the functionning and the essential wiring of each script. 
 
-## Library explanation
-### wlan and requests library
+## Libraries explanation
+### network library
   
-  Here is an explanation of the different parts of the code:
+  Here is an explanation of the methods of the library used in the code:
 
-  - `__init__`(self,pwm_pin): .....
+  - `network.WLAN()`: This method creates an instance of the WLAN class, which is used to manage Wi-Fi connections. It may take an optional argument that specifies the mode of the WLAN (f.ex: STA or AP mode).
+
+  - `WLAN.active()`: This method is used to activate or deactivate the Wi-Fi interface.
+
+  - `WLAN.connect(ssid, password)`: This method connects the device to a Wi-Fi network with the given SSID and password.
+
+  - `WLAN.ifconfig()`: This method returns the current IP address, subnet mask, gateway, and DNS server settings for the Wi-Fi interface.
+
+  - `WLAN.isconnected()`: This method returns True if the device is currently connected to a Wi-Fi network, and False otherwise.
+
+  - `network.Socket()`: This method creates a new socket object, which is used for network communication using various protocols, such as TCP and UDP.
+
+  - `Socket.bind(address)`: This method binds the socket to a specific IP address and port number.
+
+  - `Socket.accept()`: This method waits for a new incoming connection and returns a new socket object representing the connection.
+
+  - `Socket.recv(bufsize)`: This method receives data from the socket.
+
+  - `Socket.send(bytes)`: This method sends data to the socket.
+### urequests library
+  Here are some of the methods provided by the urequests library:
+
+  - `urequests.request(method, url, data=None, json=None, headers={}, stream=None)`: This method sends an HTTP request to the specified URL using the specified method (f.ex: GET, POST, PUT, DELETE, etc.). It also takes optional parameters like data, json, headers, and stream to customize the request.
+
+  - `urequests.get(url, **kwargs)`: This method sends an HTTP GET request to the specified URL.
+
+  - `urequests.Response()`: This method creates a new Response object that contains the response data and metadata returned by the server.
+
+  - `Response.text()`: This method returns the response data as a Unicode string.
+
+  - `Response.json()`: This method parses the response data as JSON and returns it as a Python object.
+### umqttsimple library
+  Here are some of the methods provided by the umqttsimple library:
+
+  - `umqttsimple.MQTTClient(client_id, server, user=None, password=None, port=0, keepalive=0, ssl=False, ssl_params={})`: This method creates an instance of the MQTTClient class, which is used to connect to an MQTT broker. It takes parameters like client_id, server, user, password, port, keepalive, ssl, and ssl_params to configure the connection.
+
+  - `MQTTClient.connect()`: This method connects the client to the MQTT broker.
+
+  - `MQTTClient.disconnect()`: This method disconnects the client from the MQTT broker.
+
+  - `MQTTClient.publish(topic, msg, retain=False, qos=0)`: This method publishes a message to the specified MQTT topic.
+
+  - `MQTTClient.subscribe(topic, qos=0)`: This method subscribes to the specified MQTT topic.
+
+  - `MQTTClient.check_msg()`: This method checks for incoming MQTT messages and processes them.
+
+  - `MQTTClient.wait_msg()`: This method waits for an incoming MQTT message and processes it.
+
+  - `MQTTClient.set_callback(callback)`: This method sets the callback function to be called when an MQTT message is received.
+  
+### ntptime library
+  Here are some of the methods provided by the ntptime library:
+
+  - `ntptime.settime()`: This method sets the system time based on the time obtained from an NTP server. It uses the network library to connect to the NTP server and retrieve the current time. It also update the time and date of the module RTC, the internal clock of the pico.
+
+  - `ntptime.host_to_ip(host)`: This method resolves the IP address of the specified host name using DNS.
   
 ## Scripts and explanations
 
